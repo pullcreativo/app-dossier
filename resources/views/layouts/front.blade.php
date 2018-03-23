@@ -24,10 +24,14 @@
 	<div class="mobilemenu" id="mobile">
 		<div class="fila text-right"> <a onClick="activator()" class="btn btn-default btn-sm"><i class="fas fa-window-close"></i></a> </div>
 		<div class="fila topadjust">
-			<div class="input-group input-group-sm">
-			  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
-			  <input type="text" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
-			</div>
+			<form action="{{url('search')}}" method="GET">
+				<div class="input-group input-group-sm">
+				  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
+				  <input type="text" name="q" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
+				  {{ csrf_field() }}
+				</div>
+			</form>
+			
 		</div>
 		<div class="fila topadjust">
 			<ul class="mobnav">
@@ -57,10 +61,13 @@
 			<section class="col-xs-2 visible-xs"> <a onClick="activator()" class="btn btn-default btn-sm"> <i class="fas fa-bars"></i> </a> </section>
 
 			<section class="hidden-xs col-xs-12 col-sm-4 col-md-3 flexaligner">
-				<div class="input-group input-group-sm">
-				  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
-				  <input type="text" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
-				</div>
+				<form action="{{url('search')}}" method="GET">
+					<div class="input-group input-group-sm">
+					  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
+					  <input type="text" name="q" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
+					  {{ csrf_field() }}
+					</div>
+				</form>
 			</section>
 
 			<section class="col-xs-8 col-sm-4 col-md-5">

@@ -182,9 +182,6 @@ Arquitectura y Diseño Interior
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
-
-
-
 		</section>
 		<!-- COLUMNA ASIDE -->
 	</div>

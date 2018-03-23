@@ -18,6 +18,7 @@ Route::get('contact','FrontController@formContact')->name('formContact');
 Route::get('editions','FrontController@getEditions')->name('getEditions');
 Route::get('post/{slug}','FrontController@getPost')->name('getPost');
 Route::get('category/{slug}','FrontController@getPostTema')->name('getPostTema');
+Route::get('search','FrontController@search');
 
 //Gurdar contacto
 Route::post('saveContact','FrontController@saveContact')->name('savecontact');

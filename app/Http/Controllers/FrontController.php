@@ -145,4 +145,19 @@ class FrontController extends Controller
 
         return back()->with('message','Informacion enviada con éxito');
     }
+    public function search(Request $request)
+    {
+
+        $temas = Tema::all();
+        $this->validate($request,[
+            'q'=>'required'
+        ]);
+
+        $text = $request->q;
+
+        $results = Post::where('titulo','like','%'.$text.'$')
+        ->orWhere('descripcion','like','%'.$text.'%')->paginate(20);
+
+        return view('busqueda',compact('results','temas'));
+    }
 }
