@@ -27,7 +27,7 @@ Arquitectura y Diseño Interior
 			<!-- BANNER OCULTO --> <div class="hiddenbanner visible-xs"><div class="sponsored">Publicidad</div><img src="banner/suscription728x90.gif" alt=""></div>	<!-- BANNER OCULTO -->
 
 			<div class="fila sectoradjust">
-				<section class="sectiontitulo">LO MÁS RECIENTE</section>
+				<section class="sectiontitulo">HISTORIAS RECIENTES</section>
 				@foreach($bloque1 as $bloq1)
 				<div class="extrapost">
 					<div class="row">
