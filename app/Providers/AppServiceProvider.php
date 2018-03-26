@@ -24,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //configurar carpte publica en el servidor
+        /* $this->app->bind('path.public', function() {
+                     return base_path().'/../public_html';
+                 });*/
     }
 }

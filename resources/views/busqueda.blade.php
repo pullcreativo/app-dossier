@@ -1,4 +1,7 @@
 @extends('layouts.front')
+@section('titulo')
+Resultados de búsqueda
+@endsection
 @section('content')
 <!-- CONTENIDO -->
 <div class="fila sectoradjust">
