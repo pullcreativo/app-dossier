@@ -166,7 +166,7 @@
 					  	<input type="hidden" name="medio" value="DA">
 					    <div class="input-group input-group-lg">
 						  <span class="input-group-addon" id="sizing-addon1">@</span>
-						  <input type="email" name="email" class="form-control" placeholder="su correo electrónico aqui" aria-describedby="sizing-addon1">
+						  <input type="email" name="email" class="form-control" placeholder="su correo electrónico aqui" aria-describedby="sizing-addon1" required>
 						</div>
 					  </div>
 					  <button type="submit" class="btn btn-default">Suscribirse al Boletín</button>
