@@ -169,7 +169,7 @@ Arquitectura y Diseño Interior
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<img src="{{asset('banner/suscrip340x340.jpg')}}" alt="Banner expodeco">
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
