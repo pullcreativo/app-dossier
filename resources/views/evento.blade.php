@@ -37,6 +37,8 @@
 				<!-- DATOS DE COMPARTIR -->
 
 				<p>{{$post->descripcion}}</p>
+				<p>{!!$post->evento->datos!!}</p>
+				<p><strong>Fecha de Inicio: </strong>{{date("d-M-Y",strtotime($post->evento->fechaini))}}</p>
 			</div>
 
 			{{-- <div class="fila sectoradjust">
