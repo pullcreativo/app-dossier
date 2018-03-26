@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>@yield('titulo') | Dossier de Arquitectura</title>
-.
 	<!-- Bloque de Estilos usados -->
 	<link rel="stylesheet" href="{{asset('css/fonts.css')}}" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -198,7 +197,7 @@
 							<h5 class="subbed">REVISTA</h5>
 							<ul class="footlist">
 								<li><a href="#">Edición Actual</a></li>
-								<li><a href="http://sga.constructivo.com/visitante/create/RC">Suscribirse</a></li>
+								<li><a href="http://sga.constructivo.com/visitante/create/DA">Suscribirse</a></li>
 								<li><a href="#">Comprar</a></li>						
 							</ul>
 						</section>
