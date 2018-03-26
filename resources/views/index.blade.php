@@ -145,14 +145,14 @@ Arquitectura y Diseño Interior
 					<div class="row">
 
 						<section class="col-xs-12 col-sm-8 col-md-8">								
-							<h4>ESPACIOS CORPORATIVOS</h4>
-							Presentamos las últimas novedades en Espacios Corporativos Ed. 35
+							<h4>{{$last_edition->name_pub}}</h4>
+							Presentamos las últimas novedades en {{$last_edition->name_pub}} Ed. {{$last_edition->nro_edition}}
 							<div class="fila topadjust text-center">
-								<button type="button" class="btn btn-success">Suscribirse</button>
+								<a href="http://sga.constructivo.com/visitante/create/DA" class="btn btn-success">Suscríbete</a>
 							</div>
 						</section>
 						<section class="col-xs-12 col-sm-4 col-md-4">								
-							<img src="edicion/portada35.png" class="img-responsive" alt="">
+							<img src="{{asset('imgPosts/'.$last_edition->portada)}}" class="img-responsive" alt="">
 						</section>
 						
 						

@@ -39,8 +39,10 @@ class FrontController extends Controller
 
         $trendings = PostVista::orderBy('cant_visto','desc')->limit(5)->get();
 
+        $last_edition = Edition::orderBy('nro_edition','desc')->first();
 
-    	return view('index',compact('temas','mainnot','bloque1','bloque2','videoP','trendings','productos'));
+
+    	return view('index',compact('temas','mainnot','bloque1','bloque2','videoP','trendings','productos','last_edition'));
     }
     /*ver lista de noticias*/
     public function getNoticias()
