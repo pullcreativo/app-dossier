@@ -20,7 +20,7 @@ Contacte con Nosostros
 				<div class="fila topadjust">
 					<div class="row">							
 						<section class="col-xs-12 col-sm-3 col-md-4">
-							<img src="http://virtual.constructivo.com/revistas/da36/perspectiva36.png" class="img-responsive" alt="">
+							<img src="{{asset('imgPosts/'.$last_edition->portada)}}" class="img-responsive" alt="{{$last_edition->name_pub}}">
 						</section>
 						<section class="col-xs-12 col-sm-9 col-md-8">
 							<h3>Llene el siguiente formulario para indicar su mensaje.</h3>

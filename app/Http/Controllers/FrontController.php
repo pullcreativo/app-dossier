@@ -62,8 +62,9 @@ class FrontController extends Controller
     /*Formulario de contacto*/
     public function formContact()
     {
+        $last_edition = Edition::orderBy('nro_edition','desc')->first();
         $temas = Tema::all();
-        return view('contacto',compact('temas'));
+        return view('contacto',compact('temas','last_edition'));
     }
     /*ver lista de ediciones*/
     public function getEditions()
