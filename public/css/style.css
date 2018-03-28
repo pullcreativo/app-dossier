@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 	font-family:'Conv_MyriadPro-Regular',Sans-Serif;
 }
+.media-body a{
+	text-decoration: none;
+	color: #333333;
+	transition: 0.5s all;
+}
+.media-body a:hover{
+	text-decoration: none;
+	color: #B9B9C8;
+}
 .contenedor{
 	padding-right: 15px;
 	padding-left: 15px;
