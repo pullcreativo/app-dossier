@@ -78,15 +78,7 @@
 
 			<section class="col-xs-12 col-sm-4 col-md-4 hidden-xs">
 				<a class="btn btn-success btn-sm pull-right">Edición Actual</a>
-				<!-- <ul class="nav nav-pills pull-right">
-				  <li role="presentation">
-				  	<a class="btn btn-default" title="Edición Actual" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Dossier de Arquitectura - Casas de Playa">
-					  Edición
-					</a>
-				  </li>
-				  <li role="presentation"><a href="#">Registro</a></li>
-				  <li role="presentation"><a href="#">Ingresar</a></li>
-				</ul> -->
+				
 			</section>
 
 			<section class="col-xs-2 visible-xs">				
