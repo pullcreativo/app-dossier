@@ -242,14 +242,14 @@
 	color: #333333;
 	font-weight: bolder;
 	line-height: 25px;
+	transition: all 0.5s;
 }
 .postdata a{
 	font-size: 17px;
 	color: #333333;
 	text-decoration: none;
-	transition: all 0.5s;
 }
-.postdata a:hover{
+.postdata h2:hover{
 	color: #B9B9C8;
 }
 .postdata span{
@@ -310,10 +310,11 @@
 	width: 100%;
 	padding-bottom: 5px;
 }
-.related h1{
-	font-size: 20px;
+.related h2{
+	font-size: 22px;
 	color: #333333;
 	font-weight: bolder;
+	transition: all 0.5s;
 }
 .related span{
 	font-size: 16px;
@@ -321,8 +322,12 @@
 }
 .related a{
 	color: #333333;
-	font-size: 15px;
+	text-decoration: none;
 }
+.related h2:hover{
+	color: #B9B9C8;
+}
+
 
 .extrapost{
 	width: 100%;

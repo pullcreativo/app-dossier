@@ -105,9 +105,9 @@
 						<div class="related">
 							<img src="{{asset('imgPosts/'.$rela->urlfoto)}}" alt="">
 							<span>Publicado {{ \Carbon\Carbon::parse($rela->fechapub)->diffForHumans()}}</span>
-							<h1>{{$rela->titulo}}</h1>
+							<a href="{{route('getPost',$rela->slug)}}"><h2>{{$rela->titulo}}</h2></a>
 							<span>{{$rela->typePost()}}</span><br>
-							<a href="{{route('getPost',$rela->slug)}}">{!! substr($rela->descripcion, 0,70) !!} ...</a>
+							<p>{!! substr($rela->descripcion, 0,70) !!} ...</p>
 						</div>
 					</section>
 					@endforeach
