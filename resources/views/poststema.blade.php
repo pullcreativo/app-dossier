@@ -20,9 +20,9 @@ publicaciones por tema
 					<section class="col-xs-12 col-sm-7 col-md-8">
 						<div class="postdata">
 							<h3>{{$post->tema->tema}}</h3>
-							<p>{{$post->titulo}}</p>
+							<a href="{{route('getPost',$post->slug)}}"></a><h2>{{$post->titulo}}</h2>
 							<span>{{$post->typePost()}}</span><br>
-							<a href="{{route('getPost',$post->slug)}}">{!! substr($post->descripcion, 0,150) !!} ...</a><br>
+							<p>{!! substr($post->descripcion, 0,150) !!} ...</p>
 							<span>Publicado {{ \Carbon\Carbon::parse($post->fechapub)->diffForHumans()}} - <i class="far fa-thumbs-up"></i> 9</span>
 						</div>
 					</section>

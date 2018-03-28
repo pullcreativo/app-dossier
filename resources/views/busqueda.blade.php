@@ -20,8 +20,8 @@ Resultados de búsqueda
 					<section class="col-xs-12 col-sm-7 col-md-8">
 						<div class="postdata">
 							<h3>{{$rs->tema->tema}}</h3>
-							<p>{{$rs->titulo}}</p>
-							<a href="{{route('getPost',$rs->slug)}}">{!! substr($rs->descripcion, 0,150) !!} ...</a><br>
+							<a href="{{route('getPost',$rs->slug)}}"></a><h2>{{$rs->titulo}}</h2>
+							<p>{!! substr($rs->descripcion, 0,150) !!} ...</p>
 							<span>Publicado {{ \Carbon\Carbon::parse($rs->fechapub)->diffForHumans()}} - <i class="far fa-thumbs-up"></i> 9</span>
 						</div>
 					</section>

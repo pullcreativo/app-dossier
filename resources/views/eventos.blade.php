@@ -19,8 +19,8 @@ Eventos
 					<section class="col-xs-12 col-sm-7 col-md-8">
 						<div class="postdata">
 							<h3>{{$event->post->tema->tema}}</h3>
-							<p>{{$event->post->titulo}}</p>
-							<a href="{{route('getPost',$event->post->slug)}}">{!! substr($event->post->descripcion, 0,150) !!} ...</a><br>
+							<a href="{{route('getPost',$event->post->slug)}}"><h2>{{$event->post->titulo}}</h2></a>
+							<p>{!! substr($event->post->descripcion, 0,150) !!} ...</p>
 							<span>Inicia el: 23 de Mayo de 2018</span>
 						</div>
 					</section>

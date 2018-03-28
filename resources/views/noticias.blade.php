@@ -22,8 +22,8 @@ Historias
 					<section class="col-xs-12 col-sm-7 col-md-8">
 						<div class="postdata">
 							<h3>{{$notice->post->tema->tema}}</h3>
-							<p>{{$notice->post->titulo}}</p>
-							<a href="{{route('getPost',$notice->post->slug)}}">{!! substr($notice->post->descripcion, 0,150) !!} ...</a><br>
+							<a href="{{route('getPost',$notice->post->slug)}}"></a><h2>{{$notice->post->titulo}}</h2>
+							<p>{!! substr($notice->post->descripcion, 0,150) !!} ...</p>
 							<span>Publicado {{ \Carbon\Carbon::parse($notice->post->fechapub)->diffForHumans()}} - <i class="far fa-thumbs-up"></i> 9</span>
 						</div>
 					</section>
