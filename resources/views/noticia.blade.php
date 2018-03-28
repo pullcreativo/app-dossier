@@ -140,7 +140,7 @@
 					    </a>
 					  </div>
 					  <div class="media-body">
-					    <h4 class="media-heading">Mezcladora 8 Cocina al Mueble Memphis</h4><span>TREBOL</span>
+					    <a href="#"><h4 class="media-heading">Mezcladora 8 Cocina al Mueble Memphis</h4></a><span>TREBOL</span>
 					  </div>
 					</div>
 
