@@ -114,7 +114,7 @@
 					<li><a href="{{route('getEventos')}}">Eventos</a></li>
 					<li><a href="{{route('getEditions')}}">Revista</a></li>
 					<li><a href="{{route('sponsored')}}">Publicidad</a></li>
-					<li><a href="#">Venta</a></li>
+					{{-- <li><a href="#">Venta</a></li> --}}
 					<li><a href="{{route('formContact')}}">Contacto</a></li>
 				</ul>
 				<ul class="socialnav">
