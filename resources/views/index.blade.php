@@ -19,8 +19,8 @@ Arquitectura y Diseño Interior
 		<section class="col-xs-12 col-sm-12 col-md-9 rightline">
 			<div class="postdata">
 				<h3>{{$mainnot->post->tema->tema}}</h3>
-				<p>{{$mainnot->post->titulo}}</p>
-				<a href="{{route('getPost',$mainnot->post->slug)}}">{{$mainnot->post->descripcion}}</a><br>
+				<a href="{{route('getPost',$mainnot->post->slug)}}"><h2>{{$mainnot->post->titulo}}</h2></a>
+				<p>{{$mainnot->post->descripcion}}</p><br>
 				<span>Publicado {{ \Carbon\Carbon::parse($mainnot->post->fechapub)->diffForHumans()}}</span>
 			</div>
 
@@ -35,9 +35,9 @@ Arquitectura y Diseño Interior
 					<section class="col-xs-12 col-sm-12 col-md-8">
 						<div class="postdata">
 							<h3>{{$bloq1->tema->tema}}</h3>
-							<p>{{$bloq1->titulo}}</p>
+							<a href="{{route('getPost',$bloq1->slug)}}"><h2>{{$bloq1->titulo}}</h2></a>
 							<span>{{$bloq1->typePost()}}</span><br>
-							<a href="{{route('getPost',$bloq1->slug)}}">{!! substr($bloq1->descripcion, 0,100) !!} ...</a><br>
+							<p>{!! substr($bloq1->descripcion, 0,100) !!} ...</p><br>
 							<span>Publicado {{ \Carbon\Carbon::parse($bloq1->fechapub)->diffForHumans()}} - <i class="far fa-thumbs-up"></i> 9</span>
 						</div>
 					</section>
