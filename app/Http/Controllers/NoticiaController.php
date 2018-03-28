@@ -29,7 +29,6 @@ class NoticiaController extends Controller
     		'titulo'=>'required',
     		'descripcion'=>'required',
     		'contenido'=>'required',
-    		'fuente'=>'required',
     		'portada'=>'required|mimes:jpg,png,jpeg'
     	]);
 
@@ -56,7 +55,6 @@ class NoticiaController extends Controller
     		$noticia = new Noticia();
     		$noticia->idpost = $post->idpost;
     		$noticia->contenido = $request->contenido;
-    		$noticia->fuente = $request->fuente;
             $noticia->priority = $request->priority;
     		$noticia->save();
 
@@ -84,8 +82,7 @@ class NoticiaController extends Controller
     	$this->validate($request,[
     		'titulo'=>'required',
     		'descripcion'=>'required',
-    		'contenido'=>'required',
-    		'fuente'=>'required',
+    		'contenido'=>'required'
     	]);
 
     	$post = Post::find($id);
@@ -118,7 +115,6 @@ class NoticiaController extends Controller
 
     	//Actualizando en la tabla noticias
     	$noticia->contenido = $request->contenido;
-    	$noticia->fuente = $request->fuente;
         $noticia->priority = $request->priority;
     	$noticia->save();
 
