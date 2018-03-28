@@ -133,16 +133,18 @@
 				<section class="sectiontitulo">PRODUCTOS DESTACADOS</section>
 
 				<div class="fila topadjust">
+					@foreach($productos as $prod)
 					<div class="media">
 					  <div class="media-left">
-					    <a href="#">
-					      <img class="media-object" src="https://www.arquiproductos.com/imgproductos/hFdAoOleoMate.jpg" width="64" alt="Mezcladora 8 Cocina al Mueble Memphis ezcladora 8 Cocina al Mueble Memphis">
+					    <a target="_blank" href="http://arquiproductos.com/producto.php?idprod={{$prod->idproducto}}">
+					      <img class="media-object" src="https://www.arquiproductos.com/{{$prod->url_foto}}" width="64" alt="{{$prod->nom_producto}}">
 					    </a>
 					  </div>
 					  <div class="media-body">
-					    <a href="#"><h4 class="media-heading">Mezcladora 8 Cocina al Mueble Memphis</h4></a><span>TREBOL</span>
+					    <a href="#"><h4 class="media-heading">{{$prod->nom_producto}}</h4></a><span>{{$prod->nom_marca}}</span>
 					  </div>
 					</div>
+					@endforeach
 
 					<div class="fila topadjust text-center">
 						<a href="#" class="btn btn-success btn-xs">Visitar Web</a>

@@ -140,31 +140,20 @@ Arquitectura y Diseño Interior
 
 			<!-- EVENTOS RECOMENDADOS -  DERECHA INDEX -->
 			<div class="fila sectoradjust">
-				<section class="sectiontitulo">EVENTOS RECOMENDADOS</section>									
-				
+				<section class="sectiontitulo">EVENTOS RECOMENDADOS</section>							
+				@foreach($events as $event)
 				<div class="trending bottomline" style="display: flex;">
 					<section class="col-xs-3 col-sm-3 col-md-1 flexrank"> <i class="fas fa-angle-right"></i> </section>
 					<section class="col-xs-9 col-sm-9 col-md-11">
 						<div class="eventodata">
-							<a href="#"><h2>Expodeco 2018 - VI Salón Internacional del Diseño y Arquitectura.</h2></a>
-							Del 23 al 27 de mayo del 2018<br>
-							Lugar: Centro de Convenciones Corporación E. WONG Av. Siete Nro 229 Urb. Rinconada Baja - La Molina
+							<a href="{{route('getPost',$event->post->slug)}}"><h2>{{$event->post->titulo}}</h2></a>
+							Inicia el:  {{date("d/m/Y",strtotime($event->fechaini))}}<br>
 						</div>
 					</section>
 				</div>
+				@endforeach
 
-				<div class="trending bottomline" style="display: flex;">
-					<section class="col-xs-3 col-sm-3 col-md-1 flexrank"> <i class="fas fa-angle-right"></i> </section>
-					<section class="col-xs-9 col-sm-9 col-md-11">
-						<div class="eventodata">
-							<a href="#"><h2>Expodeco 2018 - VI Salón Internacional del Diseño y Arquitectura.</h2></a>
-							Del 23 al 27 de mayo del 2018<br>
-							Lugar: Centro de Convenciones Corporación E. WONG Av. Siete Nro 229 Urb. Rinconada Baja - La Molina
-						</div>
-					</section>
-				</div>
-
-				<div class="fila topadjust text-center"><a href="#" class="btn btn-success btn-xs">Ver todos</a></div>
+				<div class="fila topadjust text-center"><a href="{{route('getEventos')}}" class="btn btn-success btn-xs">Ver todos</a></div>
 			</div>
 			<!-- EVENTOS RECOMENDADOS -  DERECHA INDEX -->
 

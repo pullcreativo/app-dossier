@@ -103,6 +103,30 @@
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
+			<!-- PRODUCTOS DESTACADOS - ZONA WEB INTERIORES -->
+			<div class="fila sectoradjust">
+				<section class="sectiontitulo">PRODUCTOS DESTACADOS</section>
+
+				<div class="fila topadjust">
+					@foreach($productos as $prod)
+					<div class="media">
+					  <div class="media-left">
+					    <a target="_blank" href="http://arquiproductos.com/producto.php?idprod={{$prod->idproducto}}">
+					      <img class="media-object" src="https://www.arquiproductos.com/{{$prod->url_foto}}" width="64" alt="{{$prod->nom_producto}}">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <a href="#"><h4 class="media-heading">{{$prod->nom_producto}}</h4></a><span>{{$prod->nom_marca}}</span>
+					  </div>
+					</div>
+					@endforeach
+
+					<div class="fila topadjust text-center">
+						<a href="#" class="btn btn-success btn-xs">Visitar Web</a>
+					</div>
+				</div>					
+			</div>
+			<!-- PRODUCTOS DESTACADOS - ZONA WEB INTERIORES -->
 
 			<div class="fila sectoradjust">
 				<section class="sectiontitulo bottomline">EXPLORAR</section>

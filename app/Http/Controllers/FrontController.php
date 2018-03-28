@@ -41,8 +41,10 @@ class FrontController extends Controller
 
         $last_edition = Edition::orderBy('nro_edition','desc')->first();
 
+        $events = Evento::where('destacado','=',1)->orderBy('fechaini','desc')->limit(3)->get();
 
-    	return view('index',compact('temas','mainnot','bloque1','bloque2','videoP','trendings','productos','last_edition'));
+
+    	return view('index',compact('temas','mainnot','bloque1','bloque2','videoP','trendings','productos','last_edition','events'));
     }
     /*ver lista de noticias*/
     public function getNoticias()
@@ -80,6 +82,10 @@ class FrontController extends Controller
     	$temas = Tema::all();
     	$post = Post::where('slug','=',$slug)->first();
 
+        $productos = Producto::join('fotos as f','f.iditem','=','productos.idproducto')
+        ->join('marcas as m','productos.id_marca','=','m.id_marca')
+        ->where('f.principal','=',1)->orderByRaw('RAND()')->limit(4)->get();
+
         //validando si el post no existe en la tabla post_vistas
         $newpost = DB::table('posts')->select('*')->where('idpost','=',$post->idpost)->whereNotIn('idpost',function($query) {
 
@@ -105,11 +111,11 @@ class FrontController extends Controller
         $relations = Post::where([['idtema','=',$post->tema->idtema],['idpost','<>',$post->idpost]])->orderBy('idpost','desc')->limit(3)->get(); 
 
     	if ($post->idtipo == 1) {
-    		return view('noticia',compact('post','temas','relations'));
+    		return view('noticia',compact('post','temas','relations','productos'));
     	}elseif ($post->idtipo ==2) {
-    		return view('evento',compact('post','temas','relations'));
+    		return view('evento',compact('post','temas','relations','productos'));
     	}else{
-    		return view('video',compact('post','temas','relations'));
+    		return view('video',compact('post','temas','relations','productos'));
     	}
     	
     }
