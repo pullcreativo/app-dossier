@@ -92,7 +92,7 @@ Arquitectura y Diseño Interior
 					</div>
 					<div class="postdata">
 						<h3>{{$bloq2->tema->tema}}</h3>
-						<a href="{{route('getPost',$bloq2->slug)}}"></a><h2>{{$bloq2->titulo}}</h2>
+						<a href="{{route('getPost',$bloq2->slug)}}"><h2>{{$bloq2->titulo}}</h2></a>
 						<span>{{$bloq2->typePost()}}</span><br>
 						<p>{{$bloq2->descripcion}}</p>
 						<span>Publicado {{ \Carbon\Carbon::parse($bloq2->fechapub)->diffForHumans()}}</span>
