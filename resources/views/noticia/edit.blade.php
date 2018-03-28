@@ -100,7 +100,7 @@
 							    </span>
 							@endif
 						</div>
-						<div class="form-group {{ $errors->has('fuente') ? ' has-error' : '' }}">
+						{{-- <div class="form-group {{ $errors->has('fuente') ? ' has-error' : '' }}">
 							<label for="fuente" class="control-label">Fuente de la noticia</label>
 							<input type="text" name="fuente" class="form-control" placeholder="Ingrese fuente" value="{{$noticia->fuente}}">
 							@if ($errors->has('fuente'))
@@ -108,7 +108,7 @@
 							        <strong>{{ $errors->first('fuente') }}</strong>
 							    </span>
 							@endif
-						</div>
+						</div> --}}
 						<div class="form-group">
 							<label for="priority" class="control-label">Prioridad</label>
 							<div class="radio">
