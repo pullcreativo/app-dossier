@@ -163,4 +163,14 @@ class FrontController extends Controller
 
         return view('busqueda',compact('results','temas'));
     }
+    public function about()
+    {
+        $temas = Tema::all();
+        return view('nosotros', compact('temas'));
+    }
+    public function sponsored()
+    {
+        $temas = Tema::all();
+        return view('publicidad',compact('temas'));
+    }
 }

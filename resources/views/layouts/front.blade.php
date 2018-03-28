@@ -34,11 +34,11 @@
 		</div>
 		<div class="fila topadjust">
 			<ul class="mobnav">
-				{{-- <li><a href="#">Nosotros</a></li> --}}
+				<li><a href="{{route('about')}}">Nosotros</a></li>
 				<li><a href="{{route('getNoticias')}}">Historias</a></li>
 				<li><a href="{{route('getEventos')}}">Eventos</a></li>
 				<li><a href="{{route('getEditions')}}">Revista</a></li>
-				{{-- <li><a href="#">Publicidad</a></li>
+				<li><a href="{{route('sponsored')}}">Publicidad</a></li>
 				<li><a href="#">Venta</a></li> --}}
 				<li><a href="{{route('formContact')}}">Contacto</a></li>
 			</ul>
@@ -109,12 +109,12 @@
 			<div class="desktopmenu">
 				<ul class="desktopnav">
 					<li><a href="{{url('/')}}">Inicio</a></li>
-					{{-- <li><a href="#">Nosotros</a></li> --}}
+					<li><a href="{{route('about')}}">Nosotros</a></li>
 					<li><a href="{{route('getNoticias')}}">Historias</a></li>
 					<li><a href="{{route('getEventos')}}">Eventos</a></li>
 					<li><a href="{{route('getEditions')}}">Revista</a></li>
-					{{-- <li><a href="#">Publicidad</a></li>
-					<li><a href="#">Venta</a></li> --}}
+					<li><a href="{{route('sponsored')}}">Publicidad</a></li>
+					<li><a href="#">Venta</a></li>
 					<li><a href="{{route('formContact')}}">Contacto</a></li>
 				</ul>
 				<ul class="socialnav">

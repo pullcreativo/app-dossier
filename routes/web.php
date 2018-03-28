@@ -19,6 +19,8 @@ Route::get('editions','FrontController@getEditions')->name('getEditions');
 Route::get('post/{slug}','FrontController@getPost')->name('getPost');
 Route::get('category/{slug}','FrontController@getPostTema')->name('getPostTema');
 Route::get('search','FrontController@search');
+Route::get('about','FrontController@about')->name('about');
+Route::get('sponsored','FrontController@sponsored')->name('sponsored');
 
 //Gurdar contacto
 Route::post('saveContact','FrontController@saveContact')->name('savecontact');
