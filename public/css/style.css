@@ -710,7 +710,25 @@
 	font-size: 15px;
 }
 
+/* EVENTOS INDEX */
 
+.eventodata{
+	width: 100%;
+	font-size: 13px;
+}
+.eventodata a{
+	text-decoration: none;
+}
+.eventodata h2{
+	font-size: 18px;
+	margin: 0;
+	padding-bottom: 5px;
+	color: #000000;
+	transition: all 0.5s;
+}
+.eventodata h2:hover{
+      color: #B9B9C8;
+ }
 
 @media screen and (max-width: 769px){
 

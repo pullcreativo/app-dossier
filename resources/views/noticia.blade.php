@@ -128,6 +128,29 @@
 			</div>
 			<!-- BANNER LATERAL -->
 
+			<!-- PRODUCTOS DESTACADOS - ZONA WEB INTERIORES -->
+			<div class="fila sectoradjust">
+				<section class="sectiontitulo">PRODUCTOS DESTACADOS</section>
+
+				<div class="fila topadjust">
+					<div class="media">
+					  <div class="media-left">
+					    <a href="#">
+					      <img class="media-object" src="https://www.arquiproductos.com/imgproductos/hFdAoOleoMate.jpg" width="64" alt="Mezcladora 8 Cocina al Mueble Memphis ezcladora 8 Cocina al Mueble Memphis">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">Mezcladora 8 Cocina al Mueble Memphis</h4><span>TREBOL</span>
+					  </div>
+					</div>
+
+					<div class="fila topadjust text-center">
+						<a href="#" class="btn btn-success btn-xs">Visitar Web</a>
+					</div>
+				</div>					
+			</div>
+			<!-- PRODUCTOS DESTACADOS - ZONA WEB INTERIORES -->
+
 			<div class="fila sectoradjust">
 				<section class="sectiontitulo bottomline">EXPLORAR</section>
 				@include('layouts.explorar')
