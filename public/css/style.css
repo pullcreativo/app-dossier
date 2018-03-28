@@ -661,7 +661,46 @@
 	max-height: 90px;
 }
 
+/* NOSOTROS */
+.revista{
+	width: 20%;
+	margin: 10px 0px;
+}
+.revista img{
+	width: 95%;
+	padding: 2.5%;
+}
+.mostrador{
+	display: flex;
+	flex-wrap: wrap;
+	align-items:flex-start;
+	justify-content:center;
+}
+.subtitulo{
+	width: 100%;
+	padding: 6px 0px;
+	font-size:20px;
+	font-weight: bolder; 
+}
 
+/* PUBLICIDAD */
+.publish{
+	width: 98%;
+	padding:10px;
+	color: #000000;
+	font-size: 14px;
+}
+.publish h1{
+	font-size: 25px;
+}
+.publish h1:after{
+	content: "";
+	padding-bottom: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.publish p{
+	font-size: 15px;
+}
 
 
 
