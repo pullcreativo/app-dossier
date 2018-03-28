@@ -141,7 +141,7 @@
 					    </a>
 					  </div>
 					  <div class="media-body">
-					    <a href="#"><h4 class="media-heading">{{$prod->nom_producto}}</h4></a><span>{{$prod->nom_marca}}</span>
+					    <a target="_blank" href="http://arquiproductos.com/producto.php?idprod={{$prod->idproducto}}"><h4 class="media-heading">{{$prod->nom_producto}}</h4></a><span>{{$prod->nom_marca}}</span>
 					  </div>
 					</div>
 					@endforeach

@@ -71,8 +71,8 @@
 
 			<section class="col-xs-8 col-sm-4 col-md-5">
 				<div align="center">
-					<div class="logo"> <img src="img/dossier.png" alt=""> </div>
-					<div class="logomobile"> <img src="img/dossierblack.png" alt=""> </div>
+					<div class="logo"> <img src="{{asset('img/dossier.png')}}" alt=""> </div>
+					<div class="logomobile"> <img src="{{asset('img/dossierblack.png')}}" alt=""> </div>
 				</div>		
 			</section>
 
