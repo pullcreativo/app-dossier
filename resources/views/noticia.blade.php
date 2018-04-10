@@ -6,7 +6,7 @@
 <!-- CONTENIDO -->
 <div class="fila topadjust flexaligner">
 	<div class="contenedor">
-		<div class="mainfoto">
+		<div class="detafoto">
 			<img src="{{asset('imgPosts/'.$post->urlfoto)}}" alt="">
 		</div>
 	</div>
@@ -16,7 +16,7 @@
 <div class="fila sectoradjust">
 	<div class="contenedor">
 		<div class="row">
-		<section class="col-xs-12 col-sm-12 col-md-8 rightline">
+		<section class="col-xs-12 col-sm-12 col-md-9 rightline">
 			<div class="detallepost">
 				<h3>{{$post->tema->tema}}</h3>
 				<h1>{{$post->titulo}}</h1>
@@ -131,7 +131,7 @@
 
 		</section>
 		<!-- COLUMNA ASIDE -->
-		<section class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+		<section class="col-xs-12 col-sm-12 col-md-3 hidden-xs">
 			<div class="fila topadjust">
 				@include('layouts.newslatter')
 			</div>

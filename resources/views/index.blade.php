@@ -134,6 +134,10 @@ Arquitectura y Diseño Interior
 				</div>
 				@endforeach
 
+				<div class="fila topadjust text-center">
+					<a target="_blank" href="{{route('getNoticias')}}" class="btn btn-success btn-sm">Ver más</a>
+				</div>
+
 			</div>
 			<!-- BANNER-->
 			<div class="fila sectoradjust flexcenter">

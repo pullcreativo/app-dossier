@@ -276,6 +276,13 @@ header .menu-content .redes li a{
 	margin-top: -13%;
 	margin-bottom: -13%;
 }
+.detafoto{
+	width: 100%;
+}
+.detafoto img{
+	width: 100%;
+	height: auto;
+}
 .postdata{
 	width: 100%;
 	padding: 5px 0px;
