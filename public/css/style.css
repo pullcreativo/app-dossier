@@ -423,6 +423,8 @@ header .menu-content .redes li a{
 	position: relative;
 	width: 100%;
 	max-width: 728px;
+	display: flex;
+	justify-content: center;
 }
 .bannerinto img{
 	width: 100%;
