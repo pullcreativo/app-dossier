@@ -65,7 +65,7 @@ Arquitectura y Diseño Interior
 			</div>
 			<!-- PRODUCTOS -->
 			<!-- BANNER-->
-			<div class="fila sectoradjust">
+			<div class="fila sectoradjust flexcenter">
 				<div class="bannerinto">
 					<div class="sponsored">Publicidad</div>
 					<a href="#"><img src="{{asset('banner/casasdeplaya728x90.gif')}}" alt=""></a>
@@ -95,7 +95,7 @@ Arquitectura y Diseño Interior
 
 			<!-- PRODUCTOS -->
 			<!-- BANNER-->
-			<div class="fila sectoradjust">
+			<div class="fila sectoradjust flexcenter">
 				<div class="bannerinto">
 					<div class="sponsored">Publicidad</div>
 					<a href="#"><img src="{{asset('banner/anuncie728x90.gif')}}" alt=""></a>
@@ -136,7 +136,7 @@ Arquitectura y Diseño Interior
 
 			</div>
 			<!-- BANNER-->
-			<div class="fila sectoradjust">
+			<div class="fila sectoradjust flexcenter">
 				<div class="bannerinto">
 					<div class="sponsored">Publicidad</div>
 					<a href="#"><img src="{{asset('banner/anuncie728x90.gif')}}" alt=""></a>
