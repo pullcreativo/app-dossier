@@ -1,26 +1,4 @@
 
-$(document).ready(function(){
-	buscador();
-});
-
-/*var counter=1;*/
-function buscador(){
- $('.fa-search').click(function(){
- 	/*if(counter==1){
- 		$('.buscador-desktop').animate({
- 			bottom: '90%'
- 		});
- 		counter=0;
- 	}else{
- 		counter=1;
- 		$('.buscador-desktop').animate({
- 			bottom: '100%'
- 		});
- 	}*/
- 	$('.buscador-desktop').toggle('slow');
- 	$('#buscador').focus();
- });
-}
 //DE AQUI PARA ABAJO SON FUNCIONES PARA EL PANEL ADMINISTRATIVO
 //Funcion para motrar el nombre de la foto en el boton de seleccion de foto
 function getNameImage(input){

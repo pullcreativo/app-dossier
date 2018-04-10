@@ -5,7 +5,7 @@
 @section('content')
 <!-- CONTENIDO -->
 <div class="fila topadjust flexaligner">
-	<div class="container">
+	<div class="contenedor">
 		<div class="mainfoto">
 			<img src="{{asset('imgPosts/'.$post->urlfoto)}}" alt="">
 		</div>
@@ -14,12 +14,25 @@
 
 
 <div class="fila sectoradjust">
-	<div class="container">
+	<div class="contenedor">
+		<div class="row">
 		<section class="col-xs-12 col-sm-12 col-md-8 rightline">
 			<div class="detallepost">
 				<h3>{{$post->tema->tema}}</h3>
 				<h1>{{$post->titulo}}</h1>
 				<span>Publicado {{ \Carbon\Carbon::parse($post->fechapub)->diffForHumans()}}</span>
+
+				@if(count($post->fotos) > 0)
+				<div class="fila sectoradjust">
+					
+					<div class="fotosextra">
+						@foreach($post->fotos as $foto)
+						<a class="example-image-link" href="{{asset('imgPosts/'.$foto->urlfoto)}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('imgPosts/'.$foto->urlfoto)}}" alt=""/></a>
+						@endforeach
+						
+					</div>
+				</div>
+				@endif
 
 				<!-- DATOS DE COMPARTIR -->
 				<div class="fila topadjust">
@@ -38,18 +51,18 @@
 
 				<p>{{$post->descripcion}}</p>
 				<p>{!! $post->noticia->contenido!!}</p>
-				<h5>Fuente: {{$post->noticia->fuente}}</h5>
 			</div>
+			
 
+			<!-- BANNER-->
 			<div class="fila sectoradjust">
-				<section class="sectiontitulo">FOTOS</section>
-				<div class="fotosextra">
-					@foreach($post->fotos as $foto)
-					<a class="example-image-link" href="{{asset('imgPosts/'.$foto->urlfoto)}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('imgPosts/'.$foto->urlfoto)}}" alt=""/></a>
-					@endforeach
-					
+				<div class="bannerinto">
+					<div class="sponsored">Publicidad</div>
+					<a href="#"><img src="{{asset('banner/anuncie728x90.gif')}}" alt=""></a>
 				</div>
 			</div>
+			<!-- BANNER-->
+			
 
 			{{-- <div class="fila sectoradjust">
 				<section class="sectiontitulo">VIDEOS</section>
@@ -119,11 +132,23 @@
 		</section>
 		<!-- COLUMNA ASIDE -->
 		<section class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+			<div class="fila topadjust">
+				@include('layouts.newslatter')
+			</div>
 			<!-- BANNER LATERAL -->
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a target="_blank" href="http://virtual.constructivo.com/"><img src="{{asset('banner/plataforma340x340.jpg')}}" alt="Banner Plataforma"></a>
+				</div>
+			</div>
+			<!-- BANNER LATERAL -->
+			
+			<!-- BANNER LATERAL -->
+			<div class="fila sectoradjust">
+				<div class="lateralbanner">
+					<div class="sponsored">Publicidad</div>
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -162,7 +187,7 @@
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -171,7 +196,7 @@
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -180,6 +205,7 @@
 
 		</section>
 		<!-- COLUMNA ASIDE -->
+	</div>
 	</div>
 </div>
 <!-- CONTENIDO -->

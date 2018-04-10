@@ -40,7 +40,7 @@ class Post extends Model
     {
         $nomtipo = '';
         if ($this->idtipo == 1) {
-            $nomtipo ='Historia';
+            $nomtipo ='Novedad';
         }elseif ($this->idtipo == 2) {
             $nomtipo ='Evento';
         }else{

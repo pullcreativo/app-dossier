@@ -52,7 +52,7 @@ Acerca de Nosotros
 						<p>Arquitectos, decoradores y profesionales interesados en el tema a tratar.</p>
 					</div>
 				</div>
-
+				
 
 				<!-- BANNER LATERAL -->
 				<div class="fila sectoradjust text-center">
@@ -68,12 +68,23 @@ Acerca de Nosotros
 			</section>
 			<!-- COLUMNA ASIDE -->
 			<section class="col-xs-12 col-sm-12 col-md-3 hidden-xs">
-
+				<div class="fila topadjust">
+					@include('layouts.newslatter')
+				</div>
 				<!-- BANNER LATERAL -->
 				<div class="fila sectoradjust">
 					<div class="lateralbanner">
 						<div class="sponsored">Publicidad</div>
-						<img src="banner/expodeco2018.gif" alt="">
+						<a target="_blank" href="http://virtual.constructivo.com/"><img src="{{asset('banner/plataforma340x340.jpg')}}" alt="Banner Plataforma"></a>
+					</div>
+				</div>
+				<!-- BANNER LATERAL -->
+				
+				<!-- BANNER LATERAL -->
+				<div class="fila sectoradjust">
+					<div class="lateralbanner">
+						<div class="sponsored">Publicidad</div>
+						<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt=""></a>
 					</div>
 				</div>
 				<!-- BANNER LATERAL -->
@@ -87,7 +98,7 @@ Acerca de Nosotros
 				<div class="fila sectoradjust">
 					<div class="lateralbanner">
 						<div class="sponsored">Publicidad</div>
-						<img src="{{asset('banner/expodeco2018.gif')}}" alt="">
+						<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt=""></a>
 					</div>
 				</div>
 				<!-- BANNER LATERAL -->
@@ -96,7 +107,7 @@ Acerca de Nosotros
 				<div class="fila sectoradjust">
 					<div class="lateralbanner">
 						<div class="sponsored">Publicidad</div>
-						<img src="{{asset('banner/expodeco2018.gif')}}" alt="">
+						<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt=""></a>
 					</div>
 				</div>
 				<!-- BANNER LATERAL -->

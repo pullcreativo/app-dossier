@@ -18,124 +18,70 @@
 	<link rel="shortcut icon" type="image/x-icon" href="{{asset('img/icono.png')}}" />
 </head>
 <body>
-
-	<!-- Menú para Moviles -->
-	<div class="mobilemenu" id="mobile">
-		<div class="fila text-right"> <a onClick="activator()" class="btn btn-default btn-sm"><i class="fas fa-window-close"></i></a> </div>
-		<div class="fila topadjust">
-			<form action="{{url('search')}}" method="GET">
-				<div class="input-group input-group-sm">
-				  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
-				  <input type="text" name="q" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
-				  {{ csrf_field() }}
+	<header>
+		<div class="header-content">
+			<div class="branding">
+				<a href="{{url('/')}}">
+					<img src="{{asset('img/dossierwhite.png')}}" alt="">
+				</a>
+			</div>
+			<nav id="main-menu">
+				<div class="icon-menu">
+					<span id="icon-menu" class="fa fa-bars"></span>
 				</div>
-			</form>
-			
-		</div>
-		<div class="fila topadjust">
-			<ul class="mobnav">
-				<li><a href="{{route('about')}}">Nosotros</a></li>
-				<li><a href="{{route('getNoticias')}}">Historias</a></li>
-				<li><a href="{{route('getEventos')}}">Eventos</a></li>
-				<li><a href="{{route('getEditions')}}">Revista</a></li>
-				<li><a href="{{route('sponsored')}}">Publicidad</a></li>
-				{{-- <li><a href="#">Venta</a></li> --}}
-				<li><a href="{{route('formContact')}}">Contacto</a></li>
-			</ul>
-		</div>
-		<div class="fila topadjust flexaligner">
-			<ul class="socialnav">
-				<li><a target="_blank" href="https://www.facebook.com/dossierdearquitectura"> <i class="fab fa-facebook"></i> </a></li>
-				<li><a target="_blank" href="https://twitter.com/darquitectura"> <i class="fab fa-twitter-square"></i> </a></li>
-				<li><a target="_blank" href="http://www.youtube.com/user/dossierarquitectura"> <i class="fab fa-youtube-square"></i> </a></li>
-				<li><a target="_blank" href="https://www.instagram.com/dossierarq/"> <i class="fab fa-instagram"></i> </a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Menú para Moviles -->
-
-	<!-- Cabecera de Barra de Búsqueda, Logo y Login -->
-	<div class="fila topadjust">
-		<div class="contenedor flexaligner">
-			<section class="col-xs-2 visible-xs"> <a onClick="activator()" class="btn btn-default btn-sm"> <i class="fas fa-bars"></i> </a> </section>
-
-			<section class="hidden-xs col-xs-12 col-sm-4 col-md-3 flexaligner">
-				<form action="{{url('search')}}" method="GET">
-					<div class="input-group input-group-sm">
-					  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
-					  <input type="text" name="q" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
-					  {{ csrf_field() }}
-					</div>
-				</form>
-			</section>
-
-			<section class="col-xs-8 col-sm-4 col-md-5">
-				<div align="center">
-					<div class="logo"> <img src="{{asset('img/dossier.png')}}" alt=""> </div>
-					<div class="logomobile"> <img src="{{asset('img/dossierblack.png')}}" alt=""> </div>
-				</div>		
-			</section>
-
-			<section class="col-xs-12 col-sm-4 col-md-4 hidden-xs">
-				<a class="btn btn-success btn-sm pull-right">Edición Actual</a>
-				
-			</section>
-
-			<section class="col-xs-2 visible-xs">				
-				<div class="btn-group" role="group">					
-				    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    	<i class="fas fa-user"></i>	<span class="caret"></span>
-				    </button>
-				    {{-- <ul class="dropdown-menu pull-right">
-				      <li><a href="#">Registro</a></li>
-				      <li><a href="#">Ingresar</a></li>
-				    </ul> --}}
-				 </div>
-			</section>
-		</div>
-	</div>
-	<!-- Cabecera de Barra de Búsqueda, Logo y Login -->
-
-	<!-- Fila de barra de navegación -->
-	<div class="fila borderlines topadjust hidden-xs">
-		<div class="contenedor">
-			<div class="desktopmenu">
-				<ul class="desktopnav">
+				<div class="menu-content">
+				<ul class="menu">
 					<li><a href="{{url('/')}}">Inicio</a></li>
 					<li><a href="{{route('about')}}">Nosotros</a></li>
-					<li><a href="{{route('getNoticias')}}">Historias</a></li>
+					<li><a href="{{route('getNoticias')}}">Novedades</a></li>
 					<li><a href="{{route('getEventos')}}">Eventos</a></li>
 					<li><a href="{{route('getEditions')}}">Revista</a></li>
 					<li><a href="{{route('sponsored')}}">Publicidad</a></li>
 					{{-- <li><a href="#">Venta</a></li> --}}
 					<li><a href="{{route('formContact')}}">Contacto</a></li>
+					
 				</ul>
-				<ul class="socialnav">
-					<li><a target="_blank" href="https://www.facebook.com/dossierdearquitectura"> <i class="fab fa-facebook"></i> </a></li>
-					<li><a target="_blank" href="https://twitter.com/darquitectura"> <i class="fab fa-twitter-square"></i> </a></li>
-					<li><a target="_blank" href="http://www.youtube.com/user/dossierarquitectura"> <i class="fab fa-youtube-square"></i> </a></li>
-					<li><a target="_blank" href="https://www.instagram.com/dossierarq/"> <i class="fab fa-instagram"></i> </a></li>
-				</ul>
-			</div>
+				<ul class="redes">
+					<!--Redes-->
+					<div class="social">
+						<li><a target="_blank" href="https://www.facebook.com/dossierdearquitectura"> <i class="fab fa-facebook"></i> </a></li>
+						<li><a target="_blank" href="https://twitter.com/darquitectura"> <i class="fab fa-twitter-square"></i> </a></li>
+						<li><a target="_blank" href="http://www.youtube.com/user/dossierarquitectura"> <i class="fab fa-youtube-square"></i> </a></li>
+						<li><a target="_blank" href="https://www.instagram.com/dossierarq/"> <i class="fab fa-instagram"></i> </a></li>
+					</div>
+					<form action="{{url('search')}}" method="GET">
+						<div class="input-group input-group-sm">
+						  <span class="input-group-addon" id="sizing-addon3"><i class="fas fa-search"></i></span>
+						  <input type="text" name="q" class="form-control" placeholder="Búsqueda" aria-describedby="sizing-addon3">
+						  {{ csrf_field() }}
+						</div>
+					</form>
+					
+				</ul>	
+				</div>
+				
+			</nav>
 		</div>
-	</div>
-	<!-- Fila de barra de navegación -->
+	</header>
 
 	<!-- Fila de Banners -->
-	<div class="fila sectoradjust">
-		<div class="contenedor">
-			<div class="bannerfila">
-				<div class="mainbanner">
-					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/hidromec728x90.gif')}}" alt="">
-				</div>
-				<div class="secondbanner hidden-xs">
-					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/suscription363x90.gif')}}" alt="">
+	<div class="space-top">
+		<div class="fila sectoradjust">
+			<div class="contenedor">
+				<div class="bannerfila">
+					<div class="mainbanner">
+						<div class="sponsored">Publicidad</div>
+						<a target="_blank" href="http://expodeco.pe/"><img src="{{asset('banner/expodeco728x90.gif')}}" alt="Expodeco"></a>
+					</div>
+					<div class="secondbanner hidden-xs">
+						<div class="sponsored">Publicidad</div>
+						<a href="#"><img src="{{asset('banner/interior363x90.gif')}}" alt=""></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 	<!-- Fila de Banners -->
 
 
@@ -145,8 +91,9 @@
 
 	<!-- Fila de Suscripción al Boletín -->
 	<div class="fila newsletter">
-		<div class="contenedor">
-			<div class="row">
+		<a href="#" class="btn-subir"><i class="fas fa-arrow-up"></i></a>
+		<div class="container">
+			{{-- <div class="row"> --}}
 				<section class="col-xs-12 col-sm-12 col-md-8">
 					<span>No dejes de recibir tu dosis diaria de Arquitectura y Diseño</span>
 					<p>Suscríbete al Boletín Diario de Dossier de Arquitectura y no te pierdas las noticias, fotos e historias del Diseño y la Decoración.</p>
@@ -158,13 +105,13 @@
 					  	<input type="hidden" name="medio" value="DA">
 					    <div class="input-group input-group-lg">
 						  <span class="input-group-addon" id="sizing-addon1">@</span>
-						  <input type="email" name="email" class="form-control" placeholder="su correo electrónico aqui" aria-describedby="sizing-addon1" required>
+						  <input  type="email" name="email" class="form-control" placeholder="su correo electrónico aqui" aria-describedby="sizing-addon1" required>
 						</div>
 					  </div>
 					  <button type="submit" class="btn btn-default">Suscribirse al Boletín</button>
 					</form>
 				</section>
-			</div>
+			{{-- </div> --}}
 		</div>
 	</div>
 	<!-- Fila de Suscripción al Boletín -->
@@ -174,10 +121,10 @@
 		<div class="contenedor">
 			<div class="row">
 				<div class="fila sectoradjust">
-					<div class="logofoot"><img src="img/dossierwhite.png" alt=""></div>
+					<div class="logofoot"><img src="{{asset('img/dossierwhite.png')}}" alt=""></div>
 				</div>
 				<div class="fila topadjust">
-					<div class="row">
+					{{-- <div class="row"> --}}
 						<section class="col-xs-6 col-sm-6 col-md-3">
 							<h5 class="subbed">ACERCA DE</h5>
 							<ul class="footlist">
@@ -221,7 +168,7 @@
 				<div class="fila topadjust flexaligner">
 					<p>&copy; {{date('Y')}} Dossier de Arquitectura, Todos los derechos reservados</p>
 				</div>
-			</div>
+			{{-- </div> --}}
 
 		</div>
 	</div>

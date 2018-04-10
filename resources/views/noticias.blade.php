@@ -17,7 +17,7 @@ Historias
 			<div class="extrapost">
 				<div class="row">
 					<section class="col-sx-12 col-sm-5 col-md-4">
-						<a href="#"><img src="{{asset('imgPosts/'.$notice->post->urlfoto)}}" class="img-thumbnail" alt=""></a>
+						<a href="{{route('getPost',$notice->post->slug)}}"><img src="{{asset('imgPosts/'.$notice->post->urlfoto)}}" class="img-thumbnail" alt=""></a>
 					</section>
 					<section class="col-xs-12 col-sm-7 col-md-8">
 						<div class="postdata">
@@ -36,12 +36,23 @@ Historias
 		</section>
 		<!-- COLUMNA ASIDE -->
 		<section class="col-xs-12 col-sm-12 col-md-3 hidden-xs">
-
+			<div class="fila topadjust">
+				@include('layouts.newslatter')
+			</div>
 			<!-- BANNER LATERAL -->
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a target="_blank" href="http://virtual.constructivo.com/"><img src="{{asset('banner/plataforma340x340.jpg')}}" alt="Banner Plataforma"></a>
+				</div>
+			</div>
+			<!-- BANNER LATERAL -->
+			
+			<!-- BANNER LATERAL -->
+			<div class="fila sectoradjust">
+				<div class="lateralbanner">
+					<div class="sponsored">Publicidad</div>
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -55,7 +66,7 @@ Historias
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -64,7 +75,7 @@ Historias
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->

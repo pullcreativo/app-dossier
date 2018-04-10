@@ -5,7 +5,7 @@
 @section('content')
 <!-- CONTENIDO -->
 <div class="fila topadjust flexaligner">
-	<div class="container">
+	<div class="contenedor">
 		<div class="mainfoto">
 			<iframe src="https://www.youtube.com/embed/{{$post->video->urlvideo}}" height="600" width="100%" frameborder="0"></iframe>
 		</div>
@@ -14,7 +14,8 @@
 
 
 <div class="fila sectoradjust">
-	<div class="container">
+	<div class="contenedor">
+		<div class="row">
 		<section class="col-xs-12 col-sm-12 col-md-8 rightline">
 			<div class="detallepost">
 				<h3>{{$post->tema->tema}}</h3>
@@ -79,9 +80,9 @@
 						<div class="related">
 							<img src="{{asset('imgPosts/'.$rela->urlfoto)}}" alt="">
 							<span>Publicado {{ \Carbon\Carbon::parse($rela->fechapub)->diffForHumans()}}</span>
-							<h1>{{$rela->titulo}}</h1>
+							<a href="{{route('getPost',$rela->slug)}}"><h2>{{$rela->titulo}}</h2></a>
 							<span>{{$rela->typePost()}}</span><br>
-							<a href="{{route('getPost',$rela->slug)}}">{!! substr($rela->descripcion, 0,70) !!} ...</a>
+							<p>{!! substr($rela->descripcion, 0,70) !!} ...</p>
 						</div>
 					</section>
 					@endforeach
@@ -93,11 +94,23 @@
 		</section>
 		<!-- COLUMNA ASIDE -->
 		<section class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+			<div class="fila topadjust">
+				@include('layouts.newslatter')
+			</div>
 			<!-- BANNER LATERAL -->
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a target="_blank" href="http://virtual.constructivo.com/"><img src="{{asset('banner/plataforma340x340.jpg')}}" alt="Banner Plataforma"></a>
+				</div>
+			</div>
+			<!-- BANNER LATERAL -->
+			
+			<!-- BANNER LATERAL -->
+			<div class="fila sectoradjust">
+				<div class="lateralbanner">
+					<div class="sponsored">Publicidad</div>
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -135,7 +148,7 @@
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
@@ -144,16 +157,16 @@
 			<div class="fila sectoradjust">
 				<div class="lateralbanner">
 					<div class="sponsored">Publicidad</div>
-					<img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco">
+					<a href="#"><img src="{{asset('banner/expodeco2018.gif')}}" alt="Banner expodeco"></a>
 				</div>
 			</div>
 			<!-- BANNER LATERAL -->
 
-
-
 		</section>
 		<!-- COLUMNA ASIDE -->
+		</div>
 	</div>
+
 </div>
 <!-- CONTENIDO -->
 @endsection

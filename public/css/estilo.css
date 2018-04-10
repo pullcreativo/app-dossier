@@ -1,0 +1,148 @@
+@charset: 'utf-8';
+*{
+	/*font-family: 'Lato', sans-serif;*/
+}
+
+.cuerpo{
+	width:100%;
+	background-size: cover;
+	left: 0;
+	top:0;
+	background-position: 0 0;
+	background-color: #151515;
+	display: flex;
+	justify-content: space-between;
+	/*border-radius: 10px;*/
+}
+
+@keyframes suscriptoranim{
+	0%{
+		background:#DD0000;
+	}
+	50%{
+		background:#990000;
+	}
+	100%{
+		background:#DD0000;
+	}
+}
+.sector{
+	width:50%;
+	padding-top:5px;
+	padding-bottom:5px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.sector img{
+	width: 60%;
+}
+.sectorpic{
+	width:50%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.sectorpic img{
+	width: 100%;
+}
+.cajatexto{
+	width: 90%;
+	color: #FFFFFF;
+	text-align: center;
+}
+.cajatexto p{
+	font-size: 13px;
+	margin: 10px 0;
+}
+.suscriptor{
+	width: 98%;
+	padding: 10px 1%;
+}
+.suscriptor span{
+	font-size: 17px;
+	margin: 10px 0;
+	padding: 5px 15px;
+	animation: suscriptoranim 2s infinite;
+	border-radius: 5px
+}
+
+
+.linelinker{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.blue{
+	padding: 5px 24px;
+	border-radius: 7px;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-decoration: none;	
+	background: #428BCA;
+	transition: 0.3s;
+}
+.green{
+	padding: 5px 24px;
+	border-radius: 7px;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #5CB85C;
+	transition: 0.3s;
+}
+.blue:hover{
+	transform: scale(1.2);
+}
+.green:hover{
+	transform: scale(1.2);
+}
+@media screen and (max-width:769px){
+	.cajatexto{
+		width: 85%;
+	}
+	.blue{
+		padding: 8px 24px;		
+		font-size: 15px;		
+	}
+	.green{
+		padding: 8px 24px;	
+		font-size: 15px;		
+	}
+	.sectorpic img{
+		width: 100%;
+	}
+	
+	.cajatexto p{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:481px){
+	.blue{
+		padding: 12px 30px;		
+		font-size: 15px;		
+	}
+	.green{
+		padding: 12px 30px;	
+		font-size: 15px;		
+	}
+	.cajatexto{
+		width: 95%;
+	}
+	.cajatexto p{
+		font-size: 16px;
+	}
+	.sector{
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.sectorpic{
+		display:none;
+	}
+
+}
+
