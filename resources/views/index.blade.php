@@ -20,7 +20,7 @@ Arquitectura y Diseño Interior
 			<div class="postdata">
 				<h3>{{$mainnot->post->tema->tema}}</h3>
 				<a href="{{route('getPost',$mainnot->post->slug)}}"><h2>{{$mainnot->post->titulo}}</h2></a>
-				<p>{{$mainnot->post->descripcion}}</p><br>
+				<p>{{$mainnot->post->descripcion}}</p>
 				<span>Publicado {{ \Carbon\Carbon::parse($mainnot->post->fechapub)->diffForHumans()}}</span>
 			</div>
 
@@ -55,7 +55,7 @@ Arquitectura y Diseño Interior
 							<h3>{{$bloq1->tema->tema}}</h3>
 							<a href="{{route('getPost',$bloq1->slug)}}"><h2>{{$bloq1->titulo}}</h2></a>
 							<span>{{$bloq1->typePost()}}</span><br>
-							<p>{!! substr($bloq1->descripcion, 0,100) !!} ...</p><br>
+							<p>{!! substr($bloq1->descripcion, 0,100) !!} ...</p>
 							<span>Publicado {{ \Carbon\Carbon::parse($bloq1->fechapub)->diffForHumans()}} - <i class="far fa-thumbs-up"></i> 9</span>
 						</div>
 					</section>
